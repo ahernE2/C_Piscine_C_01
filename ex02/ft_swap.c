@@ -6,14 +6,14 @@
 /*   By: alejhern <alejhern@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 17:12:27 by alejhern          #+#    #+#             */
-/*   Updated: 2024/03/26 17:12:44 by alejhern         ###   ########.fr       */
+/*   Updated: 2024/03/29 02:54:11 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
 void	ft_swap(int *a, int *b)
 {
-	char	tmp;
+	int	tmp;
 
 	tmp = *a;
 	*a = *b;
