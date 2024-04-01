@@ -6,7 +6,7 @@
 /*   By: alejhern <alejhern@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 17:55:15 by alejhern          #+#    #+#             */
-/*   Updated: 2024/03/26 20:29:23 by alejhern         ###   ########.fr       */
+/*   Updated: 2024/04/01 19:37:02 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,15 @@
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int	*inicio;
-	int	*fin;
+	int	i;
 	int	tmp;
 
-	fin = tab + size - 1;
-	inicio = tab;
-	while (fin > inicio)
+	i = 0;
+	while (i < size / 2)
 	{
-		tmp = *inicio;
-		*inicio = *fin;
-		*fin = tmp;
-		inicio++;
-		fin--;
+		tmp = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = tmp;
+		i++;
 	}
 }
